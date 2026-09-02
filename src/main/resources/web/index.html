@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Filmes</title>
+
+    <link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+
+<main class="container">
+
+    <h1>Cadastro de Filmes</h1>
+
+    <section class="card">
+
+        <h2>Cadastrar filme</h2>
+
+        <form action="/filmes/salvar" method="POST">
+
+            <label for="nomeFilme">
+                Nome do filme
+            </label>
+
+            <input
+                    type="text"
+                    id="nomeFilme"
+                    name="nomeFilme"
+                    required
+            >
+
+            <button type="submit">
+                Cadastrar
+            </button>
+
+        </form>
+
+    </section>
+
+    <section class="card">
+
+        <h2>Filmes cadastrados</h2>
+
+        <table>
+
+            <thead>
+            <tr>
+                <th>ID</th>
+                <th>Filme</th>
+            </tr>
+            </thead>
+
+            <tbody>
+            {{FILMES}}
+            </tbody>
+
+        </table>
+
+    </section>
+
+</main>
+
+</body>
+
+</html>
