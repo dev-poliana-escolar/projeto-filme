@@ -3,6 +3,8 @@
 Projeto Java para cadastro e consulta de filmes utilizando **Java, Maven, JDBC e MySQL**. \
 O banco de dados pode ser executado localmente através do **Docker**, permitindo que o projeto funcione mesmo sem acesso ao banco utilizado durante as aulas.
 
+![](media/video.gif)
+
 ## Tecnologias utilizadas
 
 * Java 17
